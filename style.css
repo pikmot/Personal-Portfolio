@@ -211,4 +211,21 @@ body {
   color: #9fd6a3;
 }
 
+.hero {
+  height: 75%;
+  text-align: right;
+}
+.hero__heading {
+  width: 100%;
+  font-size: 3em;
+  padding: 1em 0.5em 0em 0em;
+  margin: 0em;
+}
+.hero__heading--subheading {
+  font-size: 1em;
+  padding: 0em 2em 0em 0em;
+  margin: 0em;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

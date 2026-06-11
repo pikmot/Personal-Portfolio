@@ -1,2 +1,22 @@
 .hero {
+  height: 75%;
+
+  text-align: right;
+
+  &__heading {
+    width: 100%;
+    font-size: 3em;
+
+    padding: 1em 0.5em 0em 0em;
+    margin: 0em;
+
+    &--subheading {
+      font-size: 1em;
+
+      padding: 0em 2em 0em 0em;
+      margin: 0em;
+
+      text-decoration: underline;
+    }
+  }
 }
