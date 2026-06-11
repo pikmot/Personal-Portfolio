@@ -1,0 +1,58 @@
+.techstack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0;
+  margin: 1em 0;
+
+  &--header {
+    text-align: center;
+    border: 1px solid black;
+
+    border-radius: 3px;
+
+    margin: 1em;
+  }
+
+  &__section {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    &__skill {
+      &--text {
+        margin: 0 0 1em 0;
+      }
+      &--img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 3em;
+        height: 3em;
+
+        &--javascript {
+          background-image: url("./assets/icons/JavaScript.png");
+        }
+
+        &--html {
+          background-image: url("./assets/icons/HTML5.png");
+        }
+        &--css {
+          background-image: url("./assets/icons/CSS3.png");
+        }
+        &--github {
+          background-image: url("./assets/icons/GitHub.png");
+        }
+        &--sql {
+          background-image: url("./assets/icons/SQL Developer.png");
+        }
+      }
+    }
+  }
+}
