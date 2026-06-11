@@ -1,0 +1,32 @@
+@use "../variables/colors" as c;
+@use "../variables/fonts" as f;
+
+.nav {
+  width: 100%;
+
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+  align-content: center;
+
+  gap: 10px;
+
+  background-color: c.$secondary;
+
+  padding: 1.5em;
+
+  margin: 0;
+
+  &--text {
+    font-family: f.$primary;
+    font-weight: 700;
+    font-size: 0.75em;
+    color: c.$lime-green;
+  }
+}
