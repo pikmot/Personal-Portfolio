@@ -1,0 +1,44 @@
+@use "../variables/colors" as c;
+@use "../variables/fonts" as f;
+
+.contact {
+  height: fit-content;
+  width: 100%;
+  background-color: c.$secondary;
+
+  font-family: f.$text;
+  font-size: 1em;
+
+  margin: 0;
+  padding: 0;
+
+  color: c.$lime-green;
+
+  text-align: center;
+
+  //   overflow: hidden;
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.75em;
+
+    margin: 0;
+    padding: 0;
+
+    flex-wrap: wrap;
+    align-content: center;
+
+    gap: 0;
+    &--p {
+      margin: 0.5em 0 0 0;
+      font-size: 1em;
+    }
+    &--img {
+      width: 3em;
+    }
+  }
+}

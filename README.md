@@ -7,3 +7,5 @@
 - any awards(research papers)/certificates/license I assume i'll eventually add?
 - LF (large file) -> is this a .gitignore thing or is there a way to compress the img's before shipping them to git???
 - animations?
+
+- when nesting -> what is passed on when the child doesn't override things??

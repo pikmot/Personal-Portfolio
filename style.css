@@ -333,4 +333,35 @@ h6 {
   font-style: italic;
 }
 
+.contact {
+  height: fit-content;
+  width: 100%;
+  background-color: #1a3c22;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  color: #9fd6a3;
+  text-align: center;
+}
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 0;
+}
+.contact__container--p {
+  margin: 0.5em 0 0 0;
+  font-size: 1em;
+}
+.contact__container--img {
+  width: 3em;
+}
+
 /*# sourceMappingURL=style.css.map */
