@@ -1,0 +1,30 @@
+@use "../variables/colors" as c;
+@use "../variables/fonts" as f;
+
+.about {
+  font-size: 0.76em;
+
+  margin: 1em 0.5em 0 0.5em;
+  padding: 0;
+
+  text-align: center;
+  &__header {
+    font-size: 2em;
+
+    margin: 0;
+    font-family: f.$header;
+
+    text-align: center;
+  }
+  &__img {
+    width: 90%;
+
+    margin: 0 1em 0 1em;
+
+    border: 3px solid c.$pink;
+    border-radius: 5px;
+
+    text-align: center;
+    box-shadow: 8px 8px 15px c.$primary;
+  }
+}
