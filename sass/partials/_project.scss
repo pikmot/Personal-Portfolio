@@ -1,0 +1,52 @@
+@use "../variables/colors" as c;
+@use "../variables/fonts" as f;
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px;
+
+  &--box {
+    // width: 90%;
+
+    border: 10px solid black;
+    border-radius: 25px;
+
+    margin: 1em;
+  }
+
+  &__img {
+    width: 1em;
+    &--pic {
+      width: 18em;
+      margin: 0 1em;
+      text-align: center;
+      border: 3px dotted black;
+    }
+  }
+
+  &__header {
+    // margin: 1em 0 0 0;
+    text-decoration: underline;
+  }
+
+  &__subheader {
+    margin: 0.5em 0 0 0;
+
+    text-align: center;
+  }
+  &__p {
+    font-size: 0.75em;
+    text-align: center;
+
+    margin: 0 1em;
+
+    &--cursive {
+      font-style: italic;
+    }
+  }
+}
