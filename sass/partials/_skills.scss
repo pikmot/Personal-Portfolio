@@ -35,23 +35,6 @@
         background-repeat: no-repeat;
         width: 3em;
         height: 3em;
-
-        &--javascript {
-          background-image: url("./assets/icons/JavaScript.png");
-        }
-
-        &--html {
-          background-image: url("./assets/icons/HTML5.png");
-        }
-        &--css {
-          background-image: url("./assets/icons/CSS3.png");
-        }
-        &--github {
-          background-image: url("./assets/icons/GitHub.png");
-        }
-        &--sql {
-          background-image: url("./assets/icons/SQL Developer.png");
-        }
       }
     }
   }
