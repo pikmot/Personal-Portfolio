@@ -5,5 +5,5 @@
   - relevant github needed? or is img + description good + research paper?
 - i assume i link my linkedIn
 - any awards(research papers)/certificates/license I assume i'll eventually add?
-
+- LF (large file) -> is this a .gitignore thing or is there a way to compress the img's before shipping them to git???
 - animations?
