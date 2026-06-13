@@ -1,8 +1,12 @@
 @use "./variables/colors" as c;
 @use "./variables/fonts" as f;
 
+@use "./variables/animations";
+
 body {
-  background-color: c.$bg;
+  // background-color: c.$bg;
+  background: linear-gradient(to right, c.$pink, c.$lime-green, c.$pink);
+
   font-family: f.$text;
 }
 
@@ -22,4 +26,10 @@ h6 {
   // color: c.$primary;
 
   text-align: center;
+}
+
+.slide-in-from-right {
+  animation: slideInFromRight 1s forwards ease-in;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
 }

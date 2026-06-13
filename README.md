@@ -9,3 +9,5 @@
 - animations?
 
 - when nesting -> what is passed on when the child doesn't override things??
+
+- animations? any good vidz/ material?

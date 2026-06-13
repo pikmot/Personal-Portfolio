@@ -186,8 +186,18 @@ summary {
   display: list-item;
 }
 
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 body {
-  background-color: #fffaf2;
+  background: linear-gradient(to right, #ffd3b6, #9fd6a3, #ffd3b6);
   font-family: "Roboto", sans-serif;
 }
 
@@ -203,6 +213,12 @@ h5,
 h6 {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
+}
+
+.slide-in-from-right {
+  animation: slideInFromRight 1s forwards ease-in;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
 }
 
 .nav {
