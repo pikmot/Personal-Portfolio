@@ -26,6 +26,9 @@ h6 {
   color: c.$primary;
 
   text-align: center;
+
+  // margin: 0;
+  // padding: 0;
 }
 
 .slide-in-from-right {
@@ -38,4 +41,8 @@ h6 {
   animation: slideInFromLeft 1s forwards ease-in;
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
+}
+
+.blur-in-and-out {
+  animation: blurInAndOut 4s forwards ease-in infinite;
 }
