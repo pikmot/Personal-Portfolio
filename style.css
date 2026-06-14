@@ -197,7 +197,7 @@ summary {
   }
 }
 body {
-  background: linear-gradient(to right, #ffd3b6, #9fd6a3, #ffd3b6);
+  background-color: #fffaf2;
   font-family: "Roboto", sans-serif;
 }
 
@@ -212,6 +212,7 @@ h4,
 h5,
 h6 {
   font-family: "Bebas Neue", sans-serif;
+  color: #ff8243;
   text-align: center;
 }
 
@@ -231,7 +232,7 @@ h6 {
   flex-wrap: wrap;
   align-content: center;
   gap: 10px;
-  background-color: #1a3c22;
+  background-color: #2f6f3e;
   padding: 1.5em;
   margin: 0;
 }
@@ -239,7 +240,6 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.75em;
-  color: #9fd6a3;
 }
 
 .hero {
@@ -288,6 +288,7 @@ h6 {
 .techstack__section__skill--img {
   width: 3em;
   height: 3em;
+  color: 255;
 }
 
 .about {
@@ -305,7 +306,6 @@ h6 {
 .about__img {
   width: 90%;
   margin: 0 1em 0 1em;
-  border: 3px solid #ffd3b6;
   border-radius: 5px;
   text-align: center;
   box-shadow: 8px 8px 15px #ff8243;
@@ -352,12 +352,11 @@ h6 {
 .contact {
   height: fit-content;
   width: 100%;
-  background-color: #1a3c22;
+  background-color: #2f6f3e;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   margin: 0;
   padding: 0;
-  color: #9fd6a3;
   text-align: center;
 }
 .contact__container {
