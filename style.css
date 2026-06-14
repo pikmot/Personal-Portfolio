@@ -206,6 +206,20 @@ summary {
     opacity: 1;
   }
 }
+@keyframes blurInAndOut {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+}
 body {
   background-color: #fffaf2;
   font-family: "Roboto", sans-serif;
@@ -238,6 +252,10 @@ h6 {
   animation-range: entry 10% cover 40%;
 }
 
+.blur-in-and-out {
+  animation: blurInAndOut 4s forwards ease-in infinite;
+}
+
 .nav {
   width: 100%;
   list-style-type: none;
@@ -259,20 +277,44 @@ h6 {
 }
 
 .hero {
-  height: 75%;
-  text-align: right;
+  height: 100vh;
+  width: 100vw;
 }
-.hero__heading {
+.hero__container {
+  height: 100%;
   width: 100%;
-  font-size: 3em;
-  padding: 1em 0.5em 0em 0em;
-  margin: 0em;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
-.hero__heading--subheading {
-  font-size: 1em;
-  padding: 0em 2em 0em 0em;
-  margin: 0em;
+.hero__container__heading {
+  width: 90%;
+  height: 10%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 4em;
+}
+.hero__container__heading--subheading {
+  height: 6%;
+  font-size: 2em;
   text-decoration: underline;
+}
+.hero__container__background-img {
+  background-image: url("./assets/images/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100% 100%;
+  position: static;
+}
+.hero--arrow-img {
+  height: 3em;
+  width: 3em;
+  position: static;
+  filter: invert(100%);
 }
 
 .techstack {
@@ -326,7 +368,7 @@ h6 {
 }
 .about__header {
   font-size: 2em;
-  margin: 0;
+  margin: 1em 0 0 0;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
 }
