@@ -6,6 +6,15 @@
 - i assume i link my linkedIn
 - any awards(research papers)/certificates/license I assume i'll eventually add?
 - LF (large file) -> is this a .gitignore thing or is there a way to compress the img's before shipping them to git???
+
+```bash
+git add .
+warning: LF will be replaced by CRLF in style.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in assets/icons/arrow.svg.
+
+```
+
 - animations?
 
 - when nesting -> what is passed on when the child doesn't override things??
