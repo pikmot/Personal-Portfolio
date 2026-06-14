@@ -32,6 +32,9 @@
       &--img {
         width: 3em;
         height: 3em;
+
+        // background-color: red;
+        color: red($color: rgb(255, 0, 0));
       }
     }
   }

@@ -4,8 +4,8 @@
 @use "./variables/animations";
 
 body {
-  // background-color: c.$bg;
-  background: linear-gradient(to right, c.$pink, c.$lime-green, c.$pink);
+  background-color: c.$bg;
+  // background: linear-gradient(to right, c.$pink, c.$lime-green, c.$pink);
 
   font-family: f.$text;
 }
@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
   font-family: f.$header;
-  // color: c.$primary;
+  color: c.$primary;
 
   text-align: center;
 }
