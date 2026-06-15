@@ -14,38 +14,54 @@
   position: relative;
   z-index: 1;
 
-  padding: 1em 0 0 0;
+  padding: 3em 0 0 0;
 
   &__header {
     margin: 0 0 0 0;
     text-decoration: underline;
+
+    font-size: 3em;
   }
 
   &--box {
     // width: 90%;
 
     // border: 10px solid black;
-    border-radius: 25px;
+    // border-radius: 25px;
 
     margin: 0em 0.5em 0.5em 0.5em;
+    padding: 0 0 0.5em 0;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    &--line {
+      border: 5px solid c.$bg-secondary;
+
+      margin: 0em 3em 1em 3em;
+
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+
     &__img {
-      width: 1em;
+      width: 2em;
       &--pic {
         width: 18em;
-        margin: 0 1em;
+        margin: 1em 1em;
         text-align: center;
-        border: 3px dotted black;
+        border: 3px dotted c.$primary;
+        box-shadow: 8px 8px 5px c.$primary;
       }
     }
 
     &__subheader {
       margin: 0.5em 0 0 0;
+
+      font-size: 2em;
 
       text-align: center;
     }

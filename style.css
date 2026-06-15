@@ -222,7 +222,7 @@ summary {
 }
 @keyframes blurInAndOutOnScroll {
   from {
-    transform: translateY(50%);
+    transform: translateY(10%);
     opacity: 0;
   }
   to {
@@ -273,7 +273,7 @@ h6 {
 }
 
 .blur-in-and-out-on-scroll {
-  animation: blurInAndOutOnScroll 1s forwards ease-in;
+  animation: blurInAndOutOnScroll 1s forwards ease;
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
 }
@@ -357,17 +357,19 @@ h6 {
   flex-wrap: wrap;
   align-content: center;
   row-gap: 1em;
-  padding: 0 0 1em 0;
+  padding: 1em 0 1em 0;
   background-color: #cac5be;
   position: relative;
   z-index: 1;
 }
 .techstack--header {
+  width: 100%;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   border: 3px solid black;
   border-radius: 3px;
   margin: 1em 1em 0em 1em;
+  padding: 0 0.1em;
 }
 .techstack__section {
   width: 19em;
@@ -394,28 +396,35 @@ h6 {
 }
 
 .about {
-  font-size: 0.76em;
-  margin: 1em 0 0 0;
-  padding: 0 0 1em 0;
+  width: 100%;
+  margin: 0em 0 0 0;
+  padding: 0.5em 0 3em 0;
   text-align: center;
   background-color: #fffaf2;
   position: relative;
   z-index: 1;
 }
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .about__container__header {
-  font-size: 2em;
+  font-size: 3em;
+  margin: 0 1em;
   padding: 1em 0 0 0;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
 }
 .about__container__p {
-  font-size: 1em;
+  font-size: 0.75em;
   margin: 1em 0.5em 0 0.5em;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
 .about__container__img {
-  width: 90%;
+  width: 75%;
   margin: 0 1em 0 1em;
   border-radius: 5px;
   text-align: center;
@@ -432,31 +441,41 @@ h6 {
   background-color: #fffaf2;
   position: relative;
   z-index: 1;
-  padding: 1em 0 0 0;
+  padding: 3em 0 0 0;
 }
 .project__header {
   margin: 0 0 0 0;
   text-decoration: underline;
+  font-size: 3em;
 }
 .project--box {
-  border-radius: 25px;
   margin: 0em 0.5em 0.5em 0.5em;
+  padding: 0 0 0.5em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.project--box--line {
+  border: 5px solid #cac5be;
+  margin: 0em 3em 1em 3em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
 .project--box__img {
-  width: 1em;
+  width: 2em;
 }
 .project--box__img--pic {
   width: 18em;
-  margin: 0 1em;
+  margin: 1em 1em;
   text-align: center;
-  border: 3px dotted black;
+  border: 3px dotted #ff8243;
+  box-shadow: 8px 8px 5px #ff8243;
 }
 .project--box__subheader {
   margin: 0.5em 0 0 0;
+  font-size: 2em;
   text-align: center;
 }
 .project--box__p {
@@ -482,9 +501,10 @@ h6 {
 }
 .contact__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 0.75em;
   margin: 0;
   padding: 0;
@@ -493,20 +513,21 @@ h6 {
   gap: 0;
 }
 .contact__container--header {
+  width: 100%;
   color: #ffffff;
-  margin: 0.5em 0 0 0;
+  margin: 0.5em 0;
   font-size: 2em;
   font-weight: bold;
 }
 .contact__container--p {
+  width: 100%;
   color: #ffffff;
-  margin: 0.5em 0 0 0;
+  margin: 0.5em 0;
   font-size: 1em;
   font-weight: bold;
 }
-.contact__container--img {
+.contact__container__container--img {
   width: 3em;
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

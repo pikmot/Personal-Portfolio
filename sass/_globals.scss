@@ -53,7 +53,7 @@ h6 {
 }
 
 .blur-in-and-out-on-scroll {
-  animation: blurInAndOutOnScroll 1s forwards ease-in;
+  animation: blurInAndOutOnScroll 1s forwards ease;
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
 }
