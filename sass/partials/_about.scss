@@ -4,27 +4,46 @@
 .about {
   font-size: 0.76em;
 
-  margin: 1em 0.5em 0 0.5em;
-  padding: 0;
+  margin: 1em 0 0 0;
+  padding: 0 0 1em 0;
 
   text-align: center;
-  &__header {
-    font-size: 2em;
 
-    margin: 1em 0 0 0;
-    font-family: f.$header;
+  background-color: c.$bg;
 
-    text-align: center;
-  }
-  &__img {
-    width: 90%;
+  position: relative;
+  z-index: 1;
 
-    margin: 0 1em 0 1em;
+  &__container {
+    &__header {
+      font-size: 2em;
 
-    // border: 3px solid c.$pink;
-    border-radius: 5px;
+      // margin: 2em 0 0 0;
 
-    text-align: center;
-    box-shadow: 8px 8px 15px c.$primary;
+      padding: 1em 0 0 0;
+      font-family: f.$header;
+
+      text-align: center;
+    }
+
+    &__p {
+      font-size: 1em;
+
+      margin: 1em 0.5em 0 0.5em;
+      font-family: f.$text;
+
+      text-align: center;
+    }
+    &__img {
+      width: 90%;
+
+      margin: 0 1em 0 1em;
+
+      // border: 3px solid c.$pink;
+      border-radius: 5px;
+
+      text-align: center;
+      box-shadow: 8px 8px 15px c.$primary;
+    }
   }
 }

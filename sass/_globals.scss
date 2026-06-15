@@ -3,6 +3,10 @@
 
 @use "./variables/animations";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: c.$bg;
   // background: linear-gradient(to right, c.$pink, c.$lime-green, c.$pink);
@@ -12,8 +16,9 @@ body {
 
 a {
   font-family: f.$text;
+  text-decoration: none;
 
-  // [:target]=_blank;
+  color: c.$text;
 }
 
 h1,
@@ -45,4 +50,10 @@ h6 {
 
 .blur-in-and-out {
   animation: blurInAndOut 4s forwards ease-in infinite;
+}
+
+.blur-in-and-out-on-scroll {
+  animation: blurInAndOutOnScroll 1s forwards ease-in;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
 }
