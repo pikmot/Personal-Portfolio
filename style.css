@@ -220,6 +220,20 @@ summary {
     transform: translateX(0%);
   }
 }
+@keyframes blurInAndOutOnScroll {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fffaf2;
   font-family: "Roboto", sans-serif;
@@ -227,6 +241,8 @@ body {
 
 a {
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 h1,
@@ -256,8 +272,19 @@ h6 {
   animation: blurInAndOut 4s forwards ease-in infinite;
 }
 
+.blur-in-and-out-on-scroll {
+  animation: blurInAndOutOnScroll 1s forwards ease-in;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
+
 .nav {
   width: 100%;
+  top: 0;
+  z-index: 2;
+  position: fixed;
+}
+.nav__container {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -270,15 +297,20 @@ h6 {
   padding: 1.5em;
   margin: 0;
 }
-.nav--text {
+.nav__container--text {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.75em;
+  color: #ffffff;
 }
 
 .hero {
   height: 100vh;
   width: 100vw;
+  top: 0;
+  position: sticky;
+  z-index: 0;
+  top: 0;
 }
 .hero__container {
   height: 100%;
@@ -308,12 +340,11 @@ h6 {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100% 100%;
-  position: static;
+  z-index: 0;
 }
 .hero--arrow-img {
   height: 3em;
   width: 3em;
-  position: static;
   filter: invert(100%);
 }
 
@@ -326,8 +357,10 @@ h6 {
   flex-wrap: wrap;
   align-content: center;
   row-gap: 1em;
-  padding: 0;
-  margin: 1em 0;
+  padding: 0 0 1em 0;
+  background-color: #cac5be;
+  position: relative;
+  z-index: 1;
 }
 .techstack--header {
   text-align: center;
@@ -362,17 +395,26 @@ h6 {
 
 .about {
   font-size: 0.76em;
-  margin: 1em 0.5em 0 0.5em;
-  padding: 0;
-  text-align: center;
-}
-.about__header {
-  font-size: 2em;
   margin: 1em 0 0 0;
+  padding: 0 0 1em 0;
+  text-align: center;
+  background-color: #fffaf2;
+  position: relative;
+  z-index: 1;
+}
+.about__container__header {
+  font-size: 2em;
+  padding: 1em 0 0 0;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
 }
-.about__img {
+.about__container__p {
+  font-size: 1em;
+  margin: 1em 0.5em 0 0.5em;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.about__container__img {
   width: 90%;
   margin: 0 1em 0 1em;
   border-radius: 5px;
@@ -386,35 +428,43 @@ h6 {
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-  gap: 10px;
+  gap: 0px;
+  background-color: #fffaf2;
+  position: relative;
+  z-index: 1;
+  padding: 1em 0 0 0;
+}
+.project__header {
+  margin: 0 0 0 0;
+  text-decoration: underline;
 }
 .project--box {
-  border: 10px solid black;
   border-radius: 25px;
-  margin: 1em;
+  margin: 0em 0.5em 0.5em 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.project__img {
+.project--box__img {
   width: 1em;
 }
-.project__img--pic {
+.project--box__img--pic {
   width: 18em;
   margin: 0 1em;
   text-align: center;
   border: 3px dotted black;
 }
-.project__header {
-  text-decoration: underline;
-}
-.project__subheader {
+.project--box__subheader {
   margin: 0.5em 0 0 0;
   text-align: center;
 }
-.project__p {
+.project--box__p {
   font-size: 0.75em;
   text-align: center;
   margin: 0 1em;
 }
-.project__p--cursive {
+.project--box__p--cursive {
   font-style: italic;
 }
 
@@ -425,7 +475,9 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   margin: 0;
-  padding: 0;
+  padding: 0 0 1em 0;
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
 .contact__container {
@@ -440,12 +492,21 @@ h6 {
   align-content: center;
   gap: 0;
 }
+.contact__container--header {
+  color: #ffffff;
+  margin: 0.5em 0 0 0;
+  font-size: 2em;
+  font-weight: bold;
+}
 .contact__container--p {
+  color: #ffffff;
   margin: 0.5em 0 0 0;
   font-size: 1em;
+  font-weight: bold;
 }
 .contact__container--img {
   width: 3em;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

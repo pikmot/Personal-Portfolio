@@ -9,26 +9,22 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="nav nav--text">
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>TECH-STACK</li>
-          <li>PROJECT</li>
-          <li>CONTACT</li>
+      <nav class="nav">
+        <ul class="nav__container nav__container--text">
+          <li><a href="#home" target="_self">HOME</a></li>
+          <li><a href="#about" target="_self">ABOUT</a></li>
+          <li><a href="#techstack" target="_self">TECH-STACK</a></li>
+          <li><a href="#project" target="_self">PROJECT</a></li>
+          <li><a href="#contact" target="_self">CONTACT</a></li>
         </ul>
       </nav>
     </header>
     <body>
       <main>
-        <section class="hero">
+        <section class="hero" id="home">
           <div class="hero hero__container hero__container__background-img">
-            <h1 class="hero hero__container__heading slide-in-from-right">
-              Hi I'm,
-            </h1>
-            <h1 class="hero hero__container__heading slide-in-from-right">
-              TOM KIP
-            </h1>
+            <h1 class="hero hero__container__heading">Hi I'm,</h1>
+            <h1 class="hero hero__container__heading">TOM KIP</h1>
             <h2
               class="hero hero__container__heading hero__container__heading--subheading"
             >
@@ -40,34 +36,37 @@
             />
           </div>
         </section>
-        <section>
-          <h1 class="about about__header">About</h1>
-          <img
-            src="./assets/images/headshot-placeholder.svg"
-            class="about__img"
-          />
-          <p class="about">
-            My Name is Tom and I'm and Asipring Software engineer. I've
-            completed a Bachelors in Advanced Computing with Majors in Software
-            Development and Computer Science.
-          </p>
-          <p class="about">
-            I'm currently completing _Nology's program, having pivoted from the
-            Manufacturing Sector. I personally love to solve problems with
-            creative and efficient methods, I loved to work collaboratively with
-            peers or customers and at time indepently as well.
-          </p>
-          <p class="about">
-            My main reason for pursuing a career in tech would be the amount of
-            advancements and wealth of knowledge that can be harnessed to please
-            customers especially with the AI advancements and customer focused
-            products that have emerged recently. This is why I want to grow with
-            the industry and help directly or indirectly create something
-            impactful.
-          </p>
+        <section class="about" id="about">
+          <div class="about__container blur-in-and-out-on-scroll">
+            <h1 class="about__container about__container__header">About</h1>
+            <img
+              src="./assets/images/headshot-placeholder.svg"
+              class="about__img"
+            />
+            <p class="about__container about__container__p">
+              My Name is Tom and I'm and Asipring Software engineer. I've
+              completed a Bachelors in Advanced Computing with Majors in
+              Software Development and Computer Science.
+            </p>
+            <p class="about__container about__container_p">
+              I'm currently completing _Nology's program, having pivoted from
+              the Manufacturing Sector. I personally love to solve problems with
+              creative and efficient methods, I loved to work collaboratively
+              with peers or customers and at time indepently as well.
+            </p>
+            <p class="about__container about__container__p">
+              My main reason for pursuing a career in tech would be the amount
+              of advancements and wealth of knowledge that can be harnessed to
+              please customers especially with the AI advancements and customer
+              focused products that have emerged recently. This is why I want to
+              grow with the industry and help directly or indirectly create
+              something impactful.
+            </p>
+          </div>
         </section>
-        <h4 class="techstack--header">Tech-Stack</h4>
-        <section class="techstack">
+        <!-- <h4 class="techstack--header">Tech-Stack</h4> -->
+        <section class="techstack" id="techstack">
+          <h4 class="techstack--header">Tech-Stack</h4>
           <ul class="techstack__section">
             <img
               src="./assets/icons/JavaScript.svg"
@@ -238,83 +237,91 @@
             </li>
           </ul>
         </section>
-
-        <section>
+        <section class="project" id="project">
           <h2 class="project__header">Work Experience</h2>
-          <div class="project--box">
+          <div class="project--box slide-in-from-left">
             <img
-              class="project__img project__img--pic"
+              class="project--box__img project--box__img--pic"
               src="./assets/images/img-placeholder.svg"
             />
-            <h3 class="project__subheader">Software Usability Tester</h3>
-            <p class="project__p">
-              I've worked for a Private consultant company helping to test
-              Software that helps train AI models withing construction sites
+            <h3 class="project--box__subheader">Software Usability Tester</h3>
+            <p class="project--box__p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem fuga accusamus eveniet itaque doloremque delectus quam
+              dolorem facere. Molestiae quae blanditiis aut perferendis, dolorem
+              nihil ipsam placeat illum ab esse.
             </p>
-            <p class="project__p project__p--cursive">
-              ~ Robotic Masters Limited
-            </p>
-            <div class="project">
-              <img class="project__img" src="./assets/icons/GitHub.svg" />
-              <img class="project__img" src="./assets/icons/GitHub.svg" />
+            <p class="project--box__p project--box__p--cursive">~ ...</p>
+            <div class="project--box">
+              <img class="project--box__img" src="./assets/icons/GitHub.svg" />
+              <img class="project--box__img" src="./assets/icons/GitHub.svg" />
             </div>
           </div>
-          <div class="project--box">
+          <div class="project--box slide-in-from-left">
             <img
-              class="project__img project__img--pic"
+              class="project--box__img project--box__img--pic"
               src="./assets/images/img-placeholder.svg"
             />
-            <h3 class="project__subheader">Data Annotation</h3>
-            <p class="project__p">
-              i've trained LLM's by creating prompts and rating responses
-              through a variety of genres; Mathematics, Python, Java, C#.
+            <h3 class="project--box__subheader">Software Usability Tester</h3>
+            <p class="project--box__p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem fuga accusamus eveniet itaque doloremque delectus quam
+              dolorem facere. Molestiae quae blanditiis aut perferendis, dolorem
+              nihil ipsam placeat illum ab esse.
             </p>
-            <p class="project__p project__p--cursive">~ OutlierAI/TelusAI</p>
+            <p class="project--box__p project--box__p--cursive">~ ...</p>
             <div class="project">
-              <img class="project__img" src="./assets/icons/GitHub.svg" />
-              <img class="project__img" src="./assets/icons/GitHub.svg" />
+              <img class="project--box__img" src="./assets/icons/GitHub.svg" />
+              <img class="project--box__img" src="./assets/icons/GitHub.svg" />
             </div>
           </div>
           <h2 class="project__header">Projects</h2>
-          <div class="project--box">
+          <div class="project--box slide-in-from-right">
             <img
-              class="project__img project__img--pic"
+              class="project--box__img project--box__img--pic"
               src="./assets/images/img-placeholder.svg"
             />
-            <h3 class="project__subheader">Data Annotation</h3>
-            <p class="project__p">
-              i've trained LLM's by creating prompts and rating responses
-              through a variety of genres; Mathematics, Python, Java, C#.
+            <h3 class="project--box__subheader">Software Usability Tester</h3>
+            <p class="project--box__p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem fuga accusamus eveniet itaque doloremque delectus quam
+              dolorem facere. Molestiae quae blanditiis aut perferendis, dolorem
+              nihil ipsam placeat illum ab esse.
             </p>
-            <p class="project__p project__p--cursive">~ OutlierAI/TelusAI</p>
-            <div class="project">
-              <img class="project__img" src="./assets/icons/GitHub.svg" />
-              <img class="project__img" src="./assets/icons/GitHub.svg" />
+            <p class="project--box__p project--box__p--cursive">~ ...</p>
+            <div class="project--box">
+              <img class="project--box__img" src="./assets/icons/GitHub.svg" />
+              <img class="project--box__img" src="./assets/icons/GitHub.svg" />
             </div>
           </div>
-          <div class="project--box">
+          <div class="project--box slide-in-from-right">
             <img
-              class="project__img project__img--pic"
+              class="project--box__img project--box__img--pic"
               src="./assets/images/img-placeholder.svg"
             />
-            <h3 class="project__subheader">Data Annotation</h3>
-            <p class="project__p">
-              i've trained LLM's by creating prompts and rating responses
-              through a variety of genres; Mathematics, Python, Java, C#.
+            <h3 class="project--box__subheader">Software Usability Tester</h3>
+            <p class="project--box__p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem fuga accusamus eveniet itaque doloremque delectus quam
+              dolorem facere. Molestiae quae blanditiis aut perferendis, dolorem
+              nihil ipsam placeat illum ab esse.
             </p>
-            <p class="project__p project__p--cursive">~ OutlierAI/TelusAI</p>
-            <div class="project">
-              <img class="project__img" src="./assets/icons/GitHub.svg" />
-              <img class="project__img" src="./assets/icons/GitHub.svg" />
+            <p class="project--box__p project--box__p--cursive">~ ...</p>
+            <div class="project--box">
+              <img class="project--box__img" src="./assets/icons/GitHub.svg" />
+              <img class="project--box__img" src="./assets/icons/GitHub.svg" />
             </div>
           </div>
         </section>
       </main>
     </body>
     <footer class="contact">
-      <div class="contact__container">
-        <p class="contact__container contact__container--p">LinkedIn:...</p>
-        <p class="contact__container contact__container--p">Email:...</p>
+      <div class="contact__container" id="contact">
+        <p class="contact__container contact__container--header">
+          Let's have a CHAT!
+        </p>
+        <p class="contact__container contact__container--p">LinkedIn:</p>
+        <p class="contact__container contact__container--p">Email:</p>
         <a href="https://github.com/pikmot">
           <img
             class="contact__container--img"
@@ -322,8 +329,12 @@
           />
         </a>
 
-        <p class="contact__container contact__container--p">Extra:...</p>
+        <p class="contact__container contact__container--p">Extra:</p>
+        <p class="contact__container contact__container--p">
+          Built with JS, HTML & SASS by TOM KIP
+        </p>
       </div>
+      <div></div>
     </footer>
   </body>
 </html>

@@ -10,7 +10,10 @@
   font-size: 1em;
 
   margin: 0;
-  padding: 0;
+  padding: 0 0 1em 0;
+
+  position: relative;
+  z-index: 1;
 
   // color: c.$lime-green;
 
@@ -33,12 +36,25 @@
     align-content: center;
 
     gap: 0;
+
+    &--header {
+      color: c.$text;
+
+      margin: 0.5em 0 0 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
     &--p {
+      color: c.$text;
+
       margin: 0.5em 0 0 0;
       font-size: 1em;
+      font-weight: bold;
     }
     &--img {
       width: 3em;
+      color: c.$text;
     }
   }
 }

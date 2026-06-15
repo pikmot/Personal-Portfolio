@@ -15,6 +15,12 @@
   // margin: 0;
   // padding: 0;
 
+  top: 0;
+  position: sticky;
+  z-index: 0;
+
+  top: 0;
+
   &__container {
     height: 100%;
     width: 100%;
@@ -67,10 +73,12 @@
       // background-size: cover;
       background-size: 100% 100%;
 
-      position: static;
+      // position: static;
 
       // margin: 0;
       // padding: 0 0 50vh 0;
+
+      z-index: 0;
     }
   }
 
@@ -78,7 +86,7 @@
     height: 3em;
     width: 3em;
 
-    position: static;
+    // position: static;
 
     filter: invert(100%);
   }
