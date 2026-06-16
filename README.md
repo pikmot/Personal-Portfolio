@@ -30,3 +30,7 @@ OR
 
 <h><section></section></h>
 ```
+
+- spacing -> the wider the screen -> icons/images -> smaller so more items (>1) can fit???
+  VS
+- the smaller the screen -> icons/images -> bigger so ONLY one can fit???

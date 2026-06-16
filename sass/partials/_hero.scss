@@ -113,12 +113,12 @@
 
   @include media.breakpoint(desktop) {
     &__container {
-      row-gap: 8em;
+      row-gap: 4em;
       &__heading {
-        font-size: 14em;
+        font-size: 10em;
         // height: 8%;
         &--subheading {
-          font-size: 8em;
+          font-size: 6em;
         }
       }
     }

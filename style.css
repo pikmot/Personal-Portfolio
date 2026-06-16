@@ -259,13 +259,13 @@ h6 {
 .slide-in-from-right {
   animation: slideInFromRight 1s forwards ease-in;
   animation-timeline: view();
-  animation-range: entry 10% cover 40%;
+  animation-range: entry 0% cover 15%;
 }
 
 .slide-in-from-left {
   animation: slideInFromLeft 1s forwards ease-in;
   animation-timeline: view();
-  animation-range: entry 10% cover 40%;
+  animation-range: entry 0% cover 15%;
 }
 
 .blur-in-and-out {
@@ -322,7 +322,7 @@ h6 {
 }
 @media (min-width: 1920px) {
   .nav__container--text {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 
@@ -417,13 +417,13 @@ h6 {
 }
 @media (min-width: 1920px) {
   .hero__container {
-    row-gap: 8em;
+    row-gap: 4em;
   }
   .hero__container__heading {
-    font-size: 14em;
+    font-size: 10em;
   }
   .hero__container__heading--subheading {
-    font-size: 8em;
+    font-size: 6em;
   }
   .hero--arrow-img {
     height: 7em;
@@ -456,12 +456,12 @@ h6 {
   padding: 0 0.1em;
 }
 .techstack__section {
-  width: 80%;
+  width: 90%;
   align-self: center;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
@@ -484,18 +484,20 @@ h6 {
 }
 .techstack__section__skill--text {
   text-align: center;
-  width: 100%;
+  width: 55%;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 3em;
 }
 .techstack__section__skill--img {
-  width: 100%;
-  width: 8em;
+  width: 35%;
 }
 @media (min-width: 577px) {
   .techstack--header {
     margin: 0.75em 0.75em 0em 0.75em;
     font-size: 4em;
+  }
+  .techstack__section {
+    width: 90%;
   }
   .techstack__section__skill {
     column-gap: 1em;
@@ -514,7 +516,7 @@ h6 {
     font-size: 5em;
   }
   .techstack__section__skill {
-    width: 45%;
+    width: 30%;
   }
   .techstack__section__skill--text {
     width: fit-content;
@@ -533,7 +535,7 @@ h6 {
     font-size: 8em;
   }
   .techstack__section__skill {
-    width: 32%;
+    width: 20%;
     flex-direction: column;
   }
   .techstack__section__skill--text {
@@ -552,12 +554,15 @@ h6 {
     margin: 1em 1em 0em 1em;
     font-size: 10em;
   }
+  .techstack__section {
+    column-gap: 1em;
+  }
   .techstack__section__skill {
-    width: 24%;
+    width: 10%;
   }
   .techstack__section__skill--text {
     width: fit-content;
-    font-size: 3em;
+    font-size: 2em;
   }
   .techstack__section__skill--img {
     width: 75%;
