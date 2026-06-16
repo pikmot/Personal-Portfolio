@@ -19,3 +19,14 @@ warning: LF will be replaced by CRLF in assets/icons/arrow.svg.
 - when nesting -> what is passed on when the child doesn't override things??
 
 - animations? any good vidz/ material?
+
+- is header in section conventionally??
+
+```html
+<h></h>
+<section></section>
+
+OR
+
+<h><section></section></h>
+```

@@ -19,6 +19,9 @@
   padding: 3em 0 0 0;
 
   &__header {
+    width: 90%;
+    height: fit-content;
+
     margin: 0 0 0 0;
     text-decoration: underline;
 
@@ -26,12 +29,12 @@
   }
 
   &--box {
-    // width: 90%;
+    width: 90%;
 
     // border: 10px solid black;
     // border-radius: 25px;
 
-    margin: 0em 0.5em 0.5em 0.5em;
+    // margin: 0em 0.5em 0.5em 0.5em;
     padding: 0 0 0.5em 0;
 
     display: flex;
@@ -39,55 +42,194 @@
     justify-content: center;
     align-items: center;
 
+    margin: 0em 3em 1em 3em;
+
     &--line {
       border: 5px solid c.$bg-secondary;
 
-      margin: 0em 3em 1em 3em;
+      // margin: 0em 3em 1em 3em;
 
       border-top: none;
       border-left: none;
       border-right: none;
     }
 
-    &__img {
-      width: 2em;
+    &__details {
+      width: 90%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      flex-wrap: wrap;
+      align-content: center;
+
+      column-gap: 0.25em;
+
       &--pic {
-        width: 18em;
+        width: 65%;
         margin: 1em 1em;
         text-align: center;
         border: 3px dotted c.$primary;
         box-shadow: 8px 8px 5px c.$primary;
       }
-    }
+      &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
-    &__subheader {
-      margin: 0.5em 0 0 0;
+        flex-wrap: wrap;
+        align-content: center;
 
-      font-size: 2em;
+        column-gap: 0.25em;
 
-      text-align: center;
-    }
-    &__p {
-      font-size: 0.75em;
-      text-align: center;
+        &--icon {
+          width: 5%;
+          text-align: center;
+        }
+      }
 
-      margin: 0 1em;
+      &__subheader {
+        margin: 0.5em 0 0 0;
 
-      &--cursive {
-        font-style: italic;
+        font-size: 2em;
+
+        text-align: center;
+      }
+      &__p {
+        font-size: 0.75em;
+        text-align: center;
+
+        margin: 0 1em;
+
+        &--cursive {
+          font-style: italic;
+          font-weight: 700;
+          padding: 0 0 0.1em 0;
+        }
       }
     }
   }
 
   @include media.breakpoint(tablet) {
+    &__header {
+      font-size: 4em;
+    }
+
+    &--box {
+      &__details {
+        width: 90%;
+        &--pic {
+          width: 75%;
+        }
+        &__box {
+          &--icon {
+            width: 5%;
+          }
+        }
+
+        &__subheader {
+          margin: 0em 0 0 0;
+          font-size: 3em;
+        }
+        &__p {
+          font-size: 1em;
+        }
+      }
+    }
   }
 
   @include media.breakpoint(large-tablet) {
+    &__header {
+      font-size: 4em;
+      margin: 0.5em 0 0 0;
+    }
+
+    &--box {
+      width: 100%;
+      flex-direction: row;
+
+      margin: 0em 1em 1em 1em;
+      &__details {
+        width: 45%;
+        &--pic {
+          width: 90%;
+        }
+        &__box {
+          &--icon {
+            width: 5%;
+          }
+        }
+
+        &__subheader {
+          margin: 0em 0 0 0;
+          font-size: 3em;
+        }
+        &__p {
+          font-size: 1.25em;
+        }
+      }
+    }
   }
 
   @include media.breakpoint(laptop) {
+    &__header {
+      font-size: 7em;
+      margin: 0.75em 0 0 0;
+    }
+
+    &--box {
+      width: 100%;
+      flex-direction: row;
+
+      margin: 0em 1em 1em 1em;
+      &__details {
+        width: 45%;
+        &--pic {
+          width: 90%;
+        }
+        &__box {
+          &--icon {
+            width: 5%;
+          }
+        }
+
+        &__subheader {
+          margin: 0em 0 0 0;
+          font-size: 4em;
+        }
+        &__p {
+          font-size: 1.75em;
+        }
+      }
+    }
   }
 
   @include media.breakpoint(desktop) {
+    &__header {
+      font-size: 5em;
+      margin: 0.75em 0 0 0;
+    }
+
+    &--box {
+      width: 90%;
+
+      &__img {
+        width: 2em;
+        &--pic {
+          width: 75%;
+        }
+      }
+
+      &__subheader {
+        margin: 0em 0 0 0;
+        font-size: 3em;
+      }
+      &__p {
+        font-size: 1.5em;
+      }
+    }
   }
 }
