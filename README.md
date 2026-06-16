@@ -1,36 +1,29 @@
-- tech stack -> main ones from Nology website OR specific ones are must have
-  broader the better? better to place skill then not?
-- is work experience + projects good
-  - should i add only projects/ work experience releveant to role (full stack?? or data annotation good as well???)
-  - relevant github needed? or is img + description good + research paper?
-- i assume i link my linkedIn
-- any awards(research papers)/certificates/license I assume i'll eventually add?
-- LF (large file) -> is this a .gitignore thing or is there a way to compress the img's before shipping them to git???
+# Personal Portfolio Project
 
-```bash
-git add .
-warning: LF will be replaced by CRLF in style.css.
-The file will have its original line endings in your working directory
-warning: LF will be replaced by CRLF in assets/icons/arrow.svg.
-```
+This is the repo for my portfolio Web Page!!!
 
-- animations?
+[img here...]
+[link to live site...]
 
-- when nesting -> what is passed on when the child doesn't override things??
+Check out my live page for more information on:
 
-- animations? any good vidz/ material?
+- Skills I've learnt or working on
+- Personal or Team projects I'm proud of
+- My current Qualifications
 
-- is header in section conventionally??
+## Tech Stack
 
-```html
-<h></h>
-<section></section>
+- &#9745; HTML
+- &#9745; CSS/SCSS
+- [x] Javascript
+- [x] Git & Github
 
-OR
+## Sections
 
-<h><section></section></h>
-```
-
-- spacing -> the wider the screen -> icons/images -> smaller so more items (>1) can fit???
-  VS
-- the smaller the screen -> icons/images -> bigger so ONLY one can fit???
+- Navbar
+- Hero
+- About
+- Techstack
+- Projects
+- Qualification
+- Contact
