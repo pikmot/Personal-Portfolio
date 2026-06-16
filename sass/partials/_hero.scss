@@ -1,19 +1,8 @@
+@use "../mixins/media";
+
 .hero {
   height: 100vh;
   width: 100vw;
-
-  // text-align: right;
-
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-
-  // flex-wrap: wrap;
-  // align-content: center;
-
-  // margin: 0;
-  // padding: 0;
 
   top: 0;
   position: sticky;
@@ -31,20 +20,15 @@
     justify-content: center;
     align-items: center;
 
-    margin: 0;
+    flex-wrap: wrap;
+    row-gap: 0;
 
-    // border: 1px dotted white;
+    margin: 0;
 
     &__heading {
       width: 90%;
-      height: 10%;
+      height: 8%;
 
-      // padding: 1em 0.5em 0em 0em;
-      // margin: 0em;
-
-      // -webkit-text-stroke: 0.01px grey;
-
-      // border: 1px dotted white;
       margin: 0;
       padding: 0;
 
@@ -52,31 +36,19 @@
       font-size: 4em;
 
       &--subheading {
-        // width: 80%;
         height: 6%;
         font-size: 2em;
-
-        // padding: 0em 0em 0em 0em;
-        // margin: 0em;
 
         text-decoration: underline;
       }
     }
 
     &__background-img {
-      // width: 100vw;
-      // height: 100vh;
-
       background-image: url("./assets/images/bg-img-vib100.png");
       background-repeat: no-repeat;
       background-position: top right;
       // background-size: cover;
       background-size: 100% 100%;
-
-      // position: static;
-
-      // margin: 0;
-      // padding: 0 0 50vh 0;
 
       z-index: 0;
     }
@@ -86,8 +58,75 @@
     height: 3em;
     width: 3em;
 
-    // position: static;
-
     filter: invert(100%);
+  }
+
+  @include media.breakpoint(tablet) {
+    &__container {
+      row-gap: 1em;
+      &__heading {
+        font-size: 5em;
+        height: 8%;
+        &--subheading {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+
+  @include media.breakpoint(large-tablet) {
+    &__container {
+      row-gap: 2em;
+      &__heading {
+        font-size: 7em;
+        &--subheading {
+          font-size: 4em;
+        }
+      }
+    }
+    &--arrow-img {
+      height: 5em;
+      width: 5em;
+
+      filter: invert(100%);
+    }
+  }
+
+  @include media.breakpoint(laptop) {
+    &__container {
+      row-gap: 6.5em;
+      &__heading {
+        font-size: 12em;
+        &--subheading {
+          font-size: 6em;
+        }
+      }
+    }
+
+    &--arrow-img {
+      height: 7em;
+      width: 7em;
+
+      filter: invert(100%);
+    }
+  }
+
+  @include media.breakpoint(desktop) {
+    &__container {
+      row-gap: 8em;
+      &__heading {
+        font-size: 14em;
+        // height: 8%;
+        &--subheading {
+          font-size: 8em;
+        }
+      }
+    }
+    &--arrow-img {
+      height: 7em;
+      width: 7em;
+
+      filter: invert(100%);
+    }
   }
 }

@@ -1,11 +1,15 @@
 @use "../variables/colors" as c;
 @use "../variables/fonts" as f;
 
-.about {
-  width: 100%;
+@use "../mixins/media";
 
-  margin: 0em 0 0 0;
-  padding: 0.5em 0 3em 0;
+.about {
+  width: 100vw;
+  // height: fit-content;
+  height: 100vh;
+
+  // margin: 0em 0 0 0;
+  padding: 1em 0 4em 0;
 
   text-align: center;
 
@@ -14,34 +18,53 @@
   position: relative;
   z-index: 1;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   &__container {
+    width: 100%;
+
     display: flex;
 
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    flex-wrap: wrap;
+    align-content: center;
+
     &__header {
+      width: 100%;
       font-size: 3em;
 
       margin: 0 1em;
 
-      padding: 1em 0 0 0;
+      padding: 0.75em 0 0 0;
       font-family: f.$header;
 
       text-align: center;
     }
+    &__container {
+      display: flex;
 
-    &__p {
-      font-size: 0.75em;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__p {
+        width: 80%;
 
-      margin: 1em 0.5em 0 0.5em;
-      font-family: f.$text;
+        font-size: 1em;
 
-      text-align: center;
+        margin: 1em 0.5em 0 0.5em;
+        font-family: f.$text;
+
+        text-align: center;
+      }
     }
+
     &__img {
-      width: 75%;
+      width: 70%;
 
       margin: 0 1em 0 1em;
 
@@ -50,6 +73,83 @@
 
       text-align: center;
       box-shadow: 8px 8px 15px c.$primary;
+    }
+  }
+
+  @include media.breakpoint(tablet) {
+    &__container {
+      &__header {
+        padding: 1em 0 0 0;
+        font-size: 4em;
+      }
+      &__container {
+        &__p {
+          font-size: 1.05em;
+        }
+      }
+
+      &__img {
+        width: 55%;
+      }
+    }
+  }
+
+  @include media.breakpoint(large-tablet) {
+    &__container {
+      flex-direction: row;
+      &__header {
+        font-size: 6em;
+      }
+
+      &__container {
+        width: 45%;
+        &__p {
+          width: 100%;
+          font-size: 1.1em;
+        }
+      }
+
+      &__img {
+        width: 45%;
+      }
+    }
+  }
+
+  @include media.breakpoint(laptop) {
+    &__container {
+      column-gap: 1em;
+      &__header {
+        font-size: 8em;
+      }
+
+      &__container {
+        &__p {
+          font-size: 1.25em;
+        }
+      }
+
+      &__img {
+        width: 35%;
+      }
+    }
+  }
+
+  @include media.breakpoint(desktop) {
+    &__container {
+      column-gap: 2em;
+      &__header {
+        font-size: 8em;
+      }
+
+      &__container {
+        &__p {
+          font-size: 1.75em;
+        }
+      }
+
+      &__img {
+        width: 30%;
+      }
     }
   }
 }

@@ -1,5 +1,7 @@
 @use "../variables/colors" as c;
 
+@use "../mixins/media";
+
 .techstack {
   width: 100%;
 
@@ -68,5 +70,17 @@
         // color: red($color: rgb(255, 0, 0));
       }
     }
+  }
+
+  @include media.breakpoint(tablet) {
+  }
+
+  @include media.breakpoint(large-tablet) {
+  }
+
+  @include media.breakpoint(laptop) {
+  }
+
+  @include media.breakpoint(desktop) {
   }
 }

@@ -1,6 +1,8 @@
 @use "../variables/colors" as c;
 @use "../variables/fonts" as f;
 
+@use "../mixins/media";
+
 .contact {
   height: fit-content;
   width: 100%;
@@ -70,5 +72,17 @@
         width: 3em;
       }
     }
+  }
+
+  @include media.breakpoint(tablet) {
+  }
+
+  @include media.breakpoint(large-tablet) {
+  }
+
+  @include media.breakpoint(laptop) {
+  }
+
+  @include media.breakpoint(desktop) {
   }
 }
