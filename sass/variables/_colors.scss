@@ -1,15 +1,90 @@
-$bg: #fffaf2;
-$bg-secondary: #cac5be;
-$primary: #ff8243;
-$secondary: #2f6f3e;
-// $secondary: #1a3c22;
-$text: #ffffff;
-// $pink: #ffd3b6;
-// $lime-green: #9fd6a3;
+// Rules:
+//bg - light
+//alternate-bg - darker then bg slightly
+//header
+//footer
+//paragraph - opposite of light
 
-// $bg: #363636;
-// $primary: #e8175d;
-// $secondary: #cc5274;
-// $text: #aba7a8;
-// // $pink: #ffd3b6;
-// // $lime-green: #9fd6a3;
+//autumn carrot - 1
+$bg: #fffaf2; //bg
+$bg-secondary: #cac5be; //alternate-bg
+$primary: #ff8243; //header
+$secondary: #2f6f3e; //footer
+$text: #000000; //paragraph
+
+//hotpink/red - inverse - 2
+// $bg: #e4e4e4; //bg
+// $bg-secondary: #cccaca; //alternate-bg
+// $primary: #ff628f; //header
+// $secondary: #e8175d; //footer
+// $text: #363636; //paragraph
+
+//black purple - 3 HAS potential
+// $bg: #eab8e4; //bg
+// $bg-secondary: #b969d3; //alternate-bg
+// $primary: #6a0dad; //header
+// $secondary: #e2e2e2; //footer
+// $text: #1f1a3d; //paragraph
+
+// jade - grey -4 ???
+// $bg: #e6e6e6; //bg
+// $bg-secondary: #bac8b1; //alternate-bg
+// $primary: #404e3b; //header
+// $secondary: #7b9669; //footer
+// $text: #6c8480; //paragraph
+
+//autumn carrot - inverse
+// $bg: #fffaf2; //bg
+// $bg-secondary: #cac5be; //alternate-bg
+// $primary: #2f6f3e; //header
+// $secondary: #ff8243; //footer
+// $text: #ffffff; //paragraph
+
+//hotpink/red
+// $bg: #363636; //bg
+// $bg-secondary: #8b8b8b; //alternate-bg
+// $primary: #ff628f; //header
+// $secondary: #e8175d; //footer
+// $text: #e2e2e2; //paragraph
+
+//Ocean Breeze
+// $bg: #caf0f8; //bg
+// $bg-secondary: #90e0ef; //alternate-bg
+// $primary: #00b4d8; //header
+// $secondary: #0077b6; //footer
+// $text: #03045e; //paragraph
+
+//LinkedIn Friendly?
+// $bg: #e0fbfc; //bg
+// $bg-secondary: #98c1d9; //alternate-bg
+// $primary: #ee6c4d; //header
+// $secondary: #3d5a80; //footer
+// $text: #293241; //paragraph
+
+//Creative Tech?
+// $bg: #ffffff; //bg
+// $bg-secondary: rgb(154, 194, 218); //alternate-bg
+// $primary: #0066ff; //header
+// $secondary: #ff5722; //footer
+// $text: #111d2d; //paragraph
+
+//Creative Tech? - inverse
+// $bg: #ffffff; //bg
+// $bg-secondary: #9ac2da; //alternate-bg
+// $primary: #ff5722; //header
+// $secondary: #0066ff; //footer
+// $text: #111d2d; //paragraph
+
+//neutral beige-brown
+// $bg: #ffebd9; //bg
+// $bg-secondary: #ffdbbb; //alternate-bg
+// $primary: #997e67; //header
+// $secondary: #ccbeb1; //footer
+// $text: #664930; //paragraph
+
+//jade - grey - purple
+// $bg: #e6e6e6; //bg
+// $bg-secondary: #8076a3; //alternate-bg
+// $primary: #9bc400; //header
+// $secondary: #f9c5bd; //footer
+// $text: #7c677f; //paragraph

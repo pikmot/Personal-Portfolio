@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=GFS+Didot&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=GFS+Didot&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -236,13 +238,13 @@ html {
 
 body {
   background-color: #fffaf2;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat";
 }
 
 a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat";
   text-decoration: none;
-  color: #ffffff;
+  color: #fffaf2;
 }
 
 h1,
@@ -251,9 +253,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Garamond";
   color: #ff8243;
   text-align: center;
+}
+
+p {
+  color: #000000;
 }
 
 .slide-in-from-right {
@@ -300,10 +306,10 @@ h6 {
   margin: 0;
 }
 .nav__container--text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 0.75em;
-  color: #ffffff;
+  color: #000000;
 }
 @media (min-width: 577px) {
   .nav__container--text {
@@ -360,7 +366,7 @@ h6 {
   text-decoration: underline;
 }
 .hero__container__background-img {
-  background-image: url("./assets/images/bg-img-vib100.png");
+  background-image: url("./assets/images/bg-1.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100% 100%;
@@ -595,7 +601,7 @@ h6 {
   font-size: 3em;
   margin: 0 1em;
   padding: 0.75em 0 0 0;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Garamond";
   text-align: center;
 }
 .about__container__container {
@@ -608,7 +614,7 @@ h6 {
   width: 80%;
   font-size: 1em;
   margin: 1em 0.5em 0 0.5em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat";
   text-align: center;
 }
 .about__container__img {
@@ -858,7 +864,7 @@ h6 {
   height: fit-content;
   width: 100%;
   background-color: #2f6f3e;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat";
   font-size: 1em;
   margin: 0;
   padding: 0 0 1em 0;
@@ -881,14 +887,14 @@ h6 {
 }
 .contact__container--header {
   width: 100%;
-  color: #ffffff;
+  color: #000000;
   margin: 0.5em 0;
   font-size: 2em;
   font-weight: bold;
 }
 .contact__container--p {
   width: 100%;
-  color: #ffffff;
+  color: #000000;
   margin: 0.5em 0;
   font-size: 1em;
   font-weight: bold;

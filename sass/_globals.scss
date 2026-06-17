@@ -18,7 +18,7 @@ a {
   font-family: f.$text;
   text-decoration: none;
 
-  color: c.$text;
+  color: c.$bg;
 }
 
 h1,
@@ -34,6 +34,10 @@ h6 {
 
   // margin: 0;
   // padding: 0;
+}
+
+p {
+  color: c.$text;
 }
 
 .slide-in-from-right {
