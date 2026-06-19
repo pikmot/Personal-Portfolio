@@ -238,11 +238,11 @@ html {
 
 body {
   background-color: #fffaf2;
-  font-family: "Montserrat";
+  font-family: "Roboto";
 }
 
 a {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   text-decoration: none;
   color: #fffaf2;
 }
@@ -253,7 +253,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Garamond";
+  font-family: "Times New Roman";
   color: #ff8243;
   text-align: center;
 }
@@ -306,7 +306,7 @@ p {
   margin: 0;
 }
 .nav__container--text {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 0.75em;
   color: #000000;
@@ -601,7 +601,7 @@ p {
   font-size: 3em;
   margin: 0 1em;
   padding: 0.75em 0 0 0;
-  font-family: "Garamond";
+  font-family: "Times New Roman";
   text-align: center;
 }
 .about__container__container {
@@ -614,7 +614,7 @@ p {
   width: 80%;
   font-size: 1em;
   margin: 1em 0.5em 0 0.5em;
-  font-family: "Montserrat";
+  font-family: "Roboto";
   text-align: center;
 }
 .about__container__img {
@@ -864,7 +864,7 @@ p {
   height: fit-content;
   width: 100%;
   background-color: #2f6f3e;
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-size: 1em;
   margin: 0;
   padding: 0 0 1em 0;
