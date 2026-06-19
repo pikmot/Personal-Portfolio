@@ -48,3 +48,5 @@ OR
 - linkedIN -> up to date + Nology :)
 - anything else? that stood out that needs immediate work
 - I'll probs revisit portfolio -> should i have it PEAK condition by week 8 for placements?
+
+- Ai like claude/chatgpt (create website)? is this presentable? tarnish devloper?
